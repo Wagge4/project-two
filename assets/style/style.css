@@ -18,4 +18,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    }
+}
+
+.calculator > button {
+    background-color: #FFFFFF;
+    border: 1px, solid #FFFFFF;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.calculator > button:hover {
+    background-color: #8a8a8a;
+}
