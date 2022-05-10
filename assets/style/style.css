@@ -11,6 +11,7 @@ body {
     padding: 0;
 }
 
+/*Code for the calculator grid*/
 .calculator {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -20,6 +21,7 @@ body {
     min-height: 100vh;
 }
 
+/*Styling the buttons on the calculator*/
 .calculator > button {
     background-color: #FFFFFF;
     border: 1px, solid #FFFFFF;
@@ -31,3 +33,30 @@ body {
 .calculator > button:hover {
     background-color: #8a8a8a;
 }
+
+.clear-equals {
+    grid-column: span 2;
+}
+
+/*This is the window where the solution of the math problem will be shown*/
+.output{
+    background-color: #000000;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .output .previous-operand{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+
+  .output .current-operand{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+  }
